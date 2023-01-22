@@ -1,0 +1,40 @@
+html {
+    font-family: "Century Gothic", sans-serif;
+}
+
+.navbar {
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo {
+    margin-right: 30px;
+}
+
+.navbar__navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    color: #808080;
+}
+
+.navbar__navigation-item {
+    margin-left: 50px;
+    color: inherit;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: inherit;
+}
