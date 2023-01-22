@@ -8,12 +8,27 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <header>
-            <img src="miniblog-logo.svg" alt="The MiniBlog Logo"/>
+        <header class="navbar">
+            <div class="navbar__brand">
+                <img src="miniblog-logo.svg" alt="The MiniBlog Logo"/>
+            </div>
+            <ul class="navbar_navigation">
+                <li class="navbar__navigation-item">
+                    <a href="#" class="navbar__link">Recent</a>
+                </li>
+                <li class="navbar__navigation-item">
+                    <a href="#" class="navbar__link">Calendar</a>
+                </li>
+            </ul>
         </header>
         <main>
             <section id="writeBlog">
                 <h1>Add new entry</h1>
+                <form action="\entry" method="POST">
+                    <label for="sample-field">Sample:</label>
+                    <input type="text" name="sample" id="sample-field"/>
+                    <button type="post">Post</button>
+                </form>
             </section>
             <section id="displayBlog">
                 <h1>Recent blogs</h1>
