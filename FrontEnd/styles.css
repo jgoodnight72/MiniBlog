@@ -2,6 +2,14 @@ html {
     font-family: "Century Gothic", sans-serif;
 }
 
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
 .navbar {
     max-width: 640px;
     margin: 50px auto;
@@ -9,16 +17,18 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .navbar__brand {
     display: flex;
     align-items: center;
+    font-size: 25px;
 }
 
 .navbar__logo {
     margin-right: 30px;
+    transform: scale(1.30);
 }
 
 .navbar__navigation {
@@ -37,4 +47,75 @@ html {
 .navbar__link {
     text-decoration: none;
     color: inherit;
+}
+
+.main {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form__input {
+    width: 100%
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__textarea {
+    width: inherit;
+    height: 110px;
+    font-size: 14px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form__post {
+    background-color: #f26135;
+    box-shadow: 4px 4px rgba(250, 220, 26, 75%);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.form__post:hover {
+    background-color: #f78c6b;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.entry {
+    margin-top: 50px;
+}
+
+.entry__title {
+    display: inline;
+    font-size: 18px;
+    color: #505050;
+}
+
+.entry__date {
+    color:#f26135;
+    font-size: 14px;
+}
+
+.entry__content {
+    font-size: 14px;
+    line-height: 150%;
+    color: #808080;
 }

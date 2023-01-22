@@ -22,25 +22,24 @@
                 </li>
             </ul>
         </header>
-        <main>
+        <main class="main">
             <section id="writeBlog">
-                <h1>Add new entry</h1>
+                <h1>New Entry</h1>
                 <form action="\entry" method="POST">
                     <p class="form__input">
-                        <label class="form__label" for="entry">Entry Contents</label>
-                        <textarea class="form__textarea" name="content" id="entry"></textarea>
+                        <textarea class="form__textarea" name="content" id="entry" aria-label="Entry contents" placeholder="What did you learn today?"></textarea>
                     </p>
-                    <button class="form__submit" type="post">Post</button>
+                    <button class="form__post" type="post">Post</button>
                 </form>
             </section>
             <section id="displayBlog">
                 <h1>Recent blogs</h1>
-                <article>
+                <article class="entry">
                     <div>
-                        <h2>A bit of a crazy day</h2>
-                        <time datetime="01-21-2023">Jan 21</time>
+                        <h2 class="entry__title">A bit of a crazy day | </h2>
+                        <time class="entry__date" datetime="01-21-2023">Jan 21</time>
                     </div>
-                    <p>
+                    <p class="entry__content">
                         I have been doing so much programming today!
                     </p>
                 </article>
