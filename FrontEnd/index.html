@@ -24,7 +24,7 @@
         </header>
         <main class="main">
             <section id="writeBlog">
-                <h1>New Entry</h1>
+                <h1 class="main__header">New Entry</h1>
                 <form action="\entry" method="POST">
                     <p class="form__input">
                         <textarea class="form__textarea" name="content" id="entry" aria-label="Entry contents" placeholder="What did you learn today?"></textarea>
@@ -33,7 +33,7 @@
                 </form>
             </section>
             <section id="displayBlog">
-                <h1>Recent blogs</h1>
+                <h1 class="main__header">Recent blogs</h1>
                 <article class="entry">
                     <div>
                         <h2 class="entry__title">A bit of a crazy day | </h2>
@@ -48,19 +48,19 @@
         <footer class="footer">
             <div class="footer__content">
                 <section class="left">
-                    <a class="footer_item">Made by Jennifer Traeger</a>
-                    <a class="footer_item">My Portfolio</a>
-                    <a class="footer_item">LinkedIn</a>
-                    <a class="footer_item">Git</a>
+                    <a class="footer__item">Made by Jennifer Traeger</a>
+                    <a class="footer__item">My Portfolio</a>
+                    <a class="footer__item">LinkedIn</a>
+                    <a class="footer__item">Git</a>
                 </section>
                 <section class="right">
-                    <div>
-                        <a class="footer_item">Recent</a>
-                        <a class="footer_item">Calendar</a>
+                    <div class="footer__column">
+                        <a class="footer__item">Recent</a>
+                        <a class="footer__item">Calendar</a>
                     </div>
-                    <div>
-                        <a class="footer_item">About</a>
-                        <a class="footer_item">How Mini-Blog was made</a>
+                    <div class="footer__column">
+                        <a class="footer__item">About</a>
+                        <a class="footer__item">How Mini-Blog was made</a>
                     </div>
                 </section>
             </div>

@@ -8,6 +8,7 @@ html {
 
 body {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .navbar {
@@ -29,6 +30,7 @@ body {
 .navbar__logo {
     margin-right: 30px;
     transform: scale(1.30);
+    color: #505050;
 }
 
 .navbar__navigation {
@@ -53,6 +55,10 @@ body {
     max-width: 450px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.main__header {
+    color: #222222;
 }
 
 .form {
@@ -83,8 +89,8 @@ body {
 }
 
 .form__post {
-    background-color: #f26135;
-    box-shadow: 4px 4px rgba(250, 220, 26, 75%);
+    background-color: #ff6739;
+    box-shadow: 4px 4px #ffdd62bf;
     border: none;
     font-size: 16px;
     font-weight: bold;
@@ -94,7 +100,7 @@ body {
 }
 
 .form__post:hover {
-    background-color: #f78c6b;
+    background-color: #ff9473;
     box-shadow: none;
     cursor: pointer;
 }
@@ -118,4 +124,47 @@ body {
     font-size: 14px;
     line-height: 150%;
     color: #808080;
+}
+
+.footer {
+    background-color: #ffdd62e6;
+    padding: 40px 0;
+    margin: 50px 0 0 0;
+    color: #505050;
+    font-size: 12px;
+}
+
+.footer__content {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .left {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.footer__item {
+    margin-bottom: 5px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__item:hover {
+    text-decoration: underline;
 }
