@@ -25,9 +25,11 @@
             <section id="writeBlog">
                 <h1>Add new entry</h1>
                 <form action="\entry" method="POST">
-                    <label for="sample-field">Sample:</label>
-                    <input type="text" name="sample" id="sample-field"/>
-                    <button type="post">Post</button>
+                    <p class="form__input">
+                        <label class="form__label" for="entry">Entry Contents</label>
+                        <textarea class="form__textarea" name="content" id="entry"></textarea>
+                    </p>
+                    <button class="form__submit" type="post">Post</button>
                 </form>
             </section>
             <section id="displayBlog">
@@ -43,6 +45,25 @@
                 </article>
             </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="footer__content">
+                <section class="left">
+                    <a class="footer_item">Made by Jennifer Traeger</a>
+                    <a class="footer_item">My Portfolio</a>
+                    <a class="footer_item">LinkedIn</a>
+                    <a class="footer_item">Git</a>
+                </section>
+                <section class="right">
+                    <div>
+                        <a class="footer_item">Recent</a>
+                        <a class="footer_item">Calendar</a>
+                    </div>
+                    <div>
+                        <a class="footer_item">About</a>
+                        <a class="footer_item">How MiniBlog was made</a>
+                    </div>
+                </section>
+            </div>
+        </footer>
     </body>
 </html>
